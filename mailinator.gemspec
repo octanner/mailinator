@@ -1,17 +1,15 @@
-lib = File.expand_path('../lib', __FILE__)
-# puts lib
-# lib = File.expand_path('lib', __dir__)
-# puts lib
+lib = File.expand_path('lib', __dir__)
+
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'mailinator/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'mailinator'
   spec.version       = Mailinator::VERSION
-  spec.authors       = ['Alejandro Dev.']
+  spec.authors       = ['Alejandro Dev., Matt Robbins']
   spec.email         = ['aeinformatico@gmail.com']
   spec.summary       = 'Mailinator REST API wrapper'
-  spec.homepage      = 'https://github.com/ainformatico/mailinator'
+  spec.homepage      = 'https://github.com/octanner/mailinator'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
